@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/deallogin3-1.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/deallogin3.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/loginD.html" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/studentminsystem/src/main/webapp/eldemo5.jsp" value="file://$PROJECT_DIR$/studentminsystem/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/studentminsystem/src/main/webapp/index.html" value="file://$PROJECT_DIR$/studentminsystem/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/studentminsystem/src/main/webapp/javaCompiler.jsp" value="file://$PROJECT_DIR$/studentminsystem/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/studentminsystem/src/main/webapp/liststudents.jsp" value="file://$PROJECT_DIR$/studentminsystem/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/studentminsystem/src/main/webapp/page.jsp" value="file://$PROJECT_DIR$/studentminsystem/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/studentminsystem/src/main/webapp/updatestudent.jsp" value="file://$PROJECT_DIR$/studentminsystem/src/main/webapp" />
+      </map>
+    </option>
+  </component>
+</project>
