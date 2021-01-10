@@ -9,6 +9,7 @@
   <version>1.0-SNAPSHOT</version>
     <modules>
         <module>studentminsystem</module>
+        <module>stuprogram</module>
     </modules>
     <packaging>pom</packaging>
 

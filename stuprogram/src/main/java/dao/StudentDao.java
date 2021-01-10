@@ -5,12 +5,13 @@ import java.util.List;
 
 public interface StudentDao {
     String getAllStudent() throws SQLException;
-    List<Student> getStudentsByName(String name);
+    String getStudentsByName(String name);
     boolean saveStudent(Student s);
     public Student getStudentByNo(String stuno);
     boolean updateStudent(Student s);
     List<Student> getStudentByPaging(int currentPage, int PageSize);
     long totalRecords();
+    boolean deleteStu(String stuname);
 }
 
 

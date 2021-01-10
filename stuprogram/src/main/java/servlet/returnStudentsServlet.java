@@ -25,8 +25,6 @@ public class returnStudentsServlet extends HttpServlet {
             //String s=sdao.getAllStudent();
             System.out.print(sdao.getAllStudent());
             out.write(sdao.getAllStudent());
-
-
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

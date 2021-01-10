@@ -15,20 +15,20 @@ import java.util.List;
 
 public class stest {
     public static void main(String[] args) throws SQLException {
-//        UserDao dao=new UserDaoImpl();
-//        User u=new User("zhangsan","123456");
-//        System.out.println(dao.checkLogin(u));
-        StudentDaoImpl sdao=new StudentDaoImpl();
-        List<Student> students=sdao.getAllStudent();
-        String json=new Gson().toJson(students);
-        System.out.println(json);
-        Gson gson=new Gson();
-        Type type = new TypeToken<List<Student>>() {
-        }.getType();
-        List<Student> stus=(List<Student>)gson.fromJson(json,type);
-        for(Student s:stus){
-            System.out.println(s);
-        }
+        UserDao dao=new UserDaoImpl();
+        User u=new User("zhangsan","123456");
+        System.out.println(dao.checkLogin(u));
+//        StudentDaoImpl sdao=new StudentDaoImpl();
+//        List<Student> students=sdao.getAllStudent();
+//        String json=new Gson().toJson(students);
+//        System.out.println(json);
+//        Gson gson=new Gson();
+//        Type type = new TypeToken<List<Student>>() {
+//        }.getType();
+//        List<Student> stus=(List<Student>)gson.fromJson(json,type);
+//        for(Student s:stus){
+//            System.out.println(s);
+//        }
 
     }
 }

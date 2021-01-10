@@ -5,6 +5,9 @@ import dao.StudentDao;
 import model.Student;
 import util.DBHelper;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -36,7 +39,7 @@ public class StudentDaoImpl implements StudentDao {
     }
 
     @Override
-    public List<Student> getStudentsByName(String name) {
+    public String getStudentsByName(String name) {
         String sql="select * from tbl_student where stuname like ?";
         DBHelper db = new DBHelper();
         List<Object> params=new ArrayList<>();
@@ -58,7 +61,8 @@ public class StudentDaoImpl implements StudentDao {
                     )
             );
         }
-        return students;
+        String student=new Gson().toJson(students);
+        return student;
     }
 
     @Override
@@ -149,5 +153,20 @@ public class StudentDaoImpl implements StudentDao {
         DBHelper dbHelper=new DBHelper();
         List<Object> query = dbHelper.query(sql, null);
         return (Long)((Map)query.get(0)).get("count");
+    }
+    @Override
+    public boolean deleteStu(String stuname) {
+        String sql = "delete from tbl_student where stuname=?";
+        Connection conn = DBHelper.getConnection();
+        try {
+            PreparedStatement pst = conn.prepareStatement(sql);
+            pst.setString(1, stuname);
+            int count = pst.executeUpdate();
+            pst.close();
+            return count>0?true:false;  //是否删除的判断
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 }

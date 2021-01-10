@@ -10,7 +10,7 @@ import java.io.IOException;
 @WebServlet("/picServlet")
 public class picServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //String img=""
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -21,7 +21,7 @@ public class DBHelper {
 	private static final String URL = "jdbc:mysql://localhost:3306/software18?serverTimezone=UTC";
 
 	private static final String USER = "root";
-	private static final String PASSWORD = "admin";
+	private static final String PASSWORD = "wxhygrdsj";
 
 	private Connection conn = null;
 	private Statement st = null;
@@ -39,12 +39,23 @@ public class DBHelper {
 		}
 	}
 
+
 	/**
 	 * 连接数据库
 	 * 
 	 * @return
 	 */
 	public Connection getConn() {
+		try {
+			conn = DriverManager.getConnection(URL, USER, PASSWORD);
+		} catch (SQLException e) {
+			System.out.println("数据库连接失败：" + e.getMessage());
+		}
+		return conn;
+	}
+
+	public static Connection getConnection() {
+		Connection conn = null;
 		try {
 			conn = DriverManager.getConnection(URL, USER, PASSWORD);
 		} catch (SQLException e) {

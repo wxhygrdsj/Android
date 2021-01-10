@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="stuprogram:war2">
+    <output-path>$PROJECT_DIR$/out/artifacts/stuprogram_war2</output-path>
+    <root id="archive" name="stuprogram_war.war">
+      <element id="artifact" artifact-name="stuprogram:war exploded" />
+      <element id="dir-copy" path="$PROJECT_DIR$/stuprogram/src/main/webapp" />
+    </root>
+  </artifact>
+</component>
